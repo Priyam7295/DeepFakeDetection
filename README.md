@@ -35,6 +35,8 @@ However our model nearly give chance probabilty (50 percent ) while testing for 
 
 ***CNN based Classification can not be generalised for unknown GAN family and Diffusion Based deepfake Model***
 
+
+
 # Level ->2 GANS vs DM Image Binary Classification
 
 
