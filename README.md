@@ -26,7 +26,7 @@ However our model nearly give chance probabilty (50 percent ) while testing for 
 
 ## We will further use KNN based classification for creating model than can be used for detecting images generated from any type of GANS and DM images. 
 
-## We are getting around 80 percent accuracy 
+## We are getting around 80 percent accuracy on new GAN Images (Which can be increased by using more diverse datasets)
 ![rvf](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/09c85ac6-9b7a-4923-bba2-7b69e6cafcf5)
 
 
