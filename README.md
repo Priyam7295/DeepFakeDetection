@@ -18,3 +18,5 @@ Project Highlights:
 
 
    
+# aa
+![WIN_20221115_21_21_22_Pro](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/b004b665-c3f5-4874-a053-17d0728a5c90)
