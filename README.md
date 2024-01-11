@@ -4,7 +4,7 @@ Welcome to Fake Image Buster , a project dedicated to combating the growing thre
 In today's digital age , the images can easily be manipulated using many GANS or Diffusion models, while these can be useful in many ways but there is a huge concern for safety and this fake images can be misued in many ways .
 This project leverages the power of simple Machine Learning to build a binary classification model that can distinguish between real and fake images with impressive accuracy.
 
-Project Highlights:
+## Project Highlights:
 
    . Model : Using a pre-trained ResNet architecture ans CNN .
 
