@@ -24,5 +24,5 @@ We further tested our modle on diffusion dataset to see whether our model is som
 ## We are getting around 90 percent accuracy 
 ![accvsepoch](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/a387280e-7d97-4dab-9bd2-11810a23ad9b)
 
-*** This can be increased by taking more variety of images and of different GAN and diffusion family ***
+***This can be increased by taking more variety of images and of different GAN and diffusion family***
 
