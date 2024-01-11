@@ -17,8 +17,7 @@ This project leverages the power of simple Machine Learning to build a **binary 
    
 
 
-## Clone the repository
-![rvf](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/09c85ac6-9b7a-4923-bba2-7b69e6cafcf5)
+
 
 
 We have used GAN images for training our model and then the test accuracy we are getting is around 80-85 percent for GAN images. 
@@ -27,7 +26,8 @@ However our model nearly give chance probabilty (50 percent ) while testing for 
 We will further use KNN based classification for creating model than can be used for detecting any type of GANS and DM images. 
 
 ## We are getting around 80 percent accuracy 
-   ![accvsepoch](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/a387280e-7d97-4dab-9bd2-11810a23ad9b)
+![rvf](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/09c85ac6-9b7a-4923-bba2-7b69e6cafcf5)
+
 
 ***This can be increased by taking more variety of images and of different GAN and diffusion family***
 
