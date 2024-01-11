@@ -18,7 +18,8 @@ This project leverages the power of simple Machine Learning to build a **binary 
 
 
 ## Clone the repository
-- git clone https://github.com/Priyam7295/DeepFakeDetection.git 
+![rvf](https://github.com/Priyam7295/DeepFakeDetection/assets/136225328/09c85ac6-9b7a-4923-bba2-7b69e6cafcf5)
+
 
 We have used GAN images for training our model and then the test accuracy we are getting is around 80-85 percent for GAN images. 
 We further tested our modle on diffusion dataset to see whether our model is somehow generalising on diffusin datasets.
