@@ -1,4 +1,4 @@
-# 1-DeepFake Detection 
+# Level 1 -> DeepFake Detection 
 ## Using Neural Network
 Fake Image Buster : Detecting Deception with Machine Learning
 Welcome to Fake Image Buster , a project dedicated to combating the growing threat of synthetic media.
@@ -33,6 +33,6 @@ However our model nearly give chance probabilty (50 percent ) while testing for 
 ***This can be increased by taking more variety of images and of different GAN and diffusion family***
 
 
-# 2. GANS vs DM Image Binary Classification
+# Level ->2 GANS vs DM Image Binary Classification
 
 
