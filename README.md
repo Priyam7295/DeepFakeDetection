@@ -6,8 +6,13 @@ This project leverages the power of simple Machine Learning to build a binary cl
 
 Project Highlights:
    . Model : Using a pre-trained ResNet architecture ans CNN .
+
+   
    . Data Augmentation : Enhances training data diversity by applying random rotations ,  
      horizontal rotations that improves generalizability.
+
+
+     
    . Performance : Delivers good accuracy .
 
 
