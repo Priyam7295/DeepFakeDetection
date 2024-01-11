@@ -5,6 +5,7 @@ In today's digital age , the images can easily be manipulated using many GANS or
 This project leverages the power of simple Machine Learning to build a binary classification model that can distinguish between real and fake images with impressive accuracy.
 
 Project Highlights:
+
    . Model : Using a pre-trained ResNet architecture ans CNN .
 
    
