@@ -11,6 +11,7 @@ This project leverages the power of simple Machine Learning to build a **binary 
    1. ***Data Augmentation***:   Enhances training data diversity by applying random rotations ,  
      horizontal rotations that improves generalizability.
    1. ***Performance***:   Delivers good accuracy , providing a reliable tool for image verification.
+   1. ***Testing on DM***:  Testing on different diffusion models .
 
 
    
