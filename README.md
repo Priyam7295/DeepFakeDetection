@@ -1,4 +1,5 @@
-# DeepFake Detection
+# DeepFake Detection 
+(## Using Neural Network)
 Fake Image Buster : Detecting Deception with Machine Learning
 Welcome to Fake Image Buster , a project dedicated to combating the growing threat of synthetic media.
 In today's digital age , the images can easily be manipulated using many GANS or Diffusion models, while these can be useful in many ways but there is a huge concern for safety and this fake images can be misued in many ways .
