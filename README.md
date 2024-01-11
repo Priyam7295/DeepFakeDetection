@@ -6,7 +6,7 @@ This project leverages the power of simple Machine Learning to build a **binary 
 
 ## Project Highlights:
 
-   1. ***Model***:   Using a pre-trained ResNet architecture ans CNN .
+   1. ***Model***:   Using a pre-trained ResNet architecture and layered with CNN .
    1. ***Data Augmentation***:   Enhances training data diversity by applying random rotations ,  
      horizontal rotations that improves generalizability.
    1. ***Performance***:   Delivers good accuracy .
