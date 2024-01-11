@@ -5,7 +5,7 @@ import numpy as np
 
 # Specify the path to the directory containing the images
 
-**Load**
+# Loading the fake GAN images 
 directory_path_1 = "GANS/biggan/biggan"
 directory_path_2 = "GANS/stargan/stargan"
 directory_path_3 = "GANS/gaugan/gaugan"
@@ -14,39 +14,37 @@ directory_path_4 = "GANS/whichfaceisreal/whichfaceisreal"
 # Create an empty list to store the loaded images
 fake_image_array = []
 def func(folder_path,array):
-    count=0
     for filename in os.listdir(folder_path):
-        # Check if the file is a valid image file (you can customize this check based on your needs)
         if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
             # Create the full path to the image using os.path.join()
             image_path = os.path.join(folder_path, filename)
-
-            # Open the image using the PIL library
             image = Image.open(image_path)
             resized_image = image.resize((256, 256))
             image_array = np.array(resized_image)
             array.append(image_array)
         # print("->",count)
-        count += 1
+  
 
 func(directory_path_1,fake_image_array)
 func(directory_path_2,fake_image_array)
 func(directory_path_3,fake_image_array)
 func(directory_path_4,fake_image_array)
 
-# print(fake_image_array)
+# This fake_image_Array conatins the path of all GAN images 
 fake_image_array = np.array(fake_image_array)
 
 
-
+# Loadig real images 
 directory_path_5 = "diffusion_datasets/imagenet/0_real"
 directory_path_6 = "diffusion_datasets/laion/0_real"
 
+
 real_image_array=[]
 
+# This real_image_array contains the real images
 func(directory_path_5,real_image_array)
 func(directory_path_6,real_image_array)
-# real_image_array = np.array(real_image_array)
+
 
 
 
@@ -70,6 +68,12 @@ for i in range(len(k)):
 X=np.array(X)
 print(len(X))    
 
+# X - contains total of fake and real images  
+
+
+#  Y is the label where 
+# 0 -- Fake Images
+# 1 -- Real Images 
 y =[]
 for i in range(len(fake_image_array)):
     y.append(0)
@@ -78,6 +82,8 @@ for i in range(len(k)):
 y=np.array(y)
 print(len(y))        
 
+
+# importing temsorflow and dufferent dependencies for our purpose
 from tensorflow.keras.applications.resnet50 import preprocess_input
 from tensorflow.keras import layers, models
 from sklearn.model_selection import train_test_split
@@ -85,13 +91,12 @@ from tensorflow.keras.applications import ResNet50
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-# X_resized = np.array([np.array(Image.fromarray(img).resize((224, 224))) for img in X])
 
-# Split the data into training and testing sets
+# Splitting the dataset into rotio 80:20 for training and testing purpose
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Preprocess input for ResNet
-
+# Using Image encoder for generalisation , which is the bigegst isuue in classifactaion 
 datagen = ImageDataGenerator(
     rotation_range=30,
     width_shift_range=0.3,
@@ -128,8 +133,8 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 early_stopping = EarlyStopping(monitor='val_loss', patience=4, restore_best_weights=True)
 # Train the model with data augmentation
 batch_size = 32
-epochs = 21  # Increase the number of epochs
-# Data augmentation using ImageDataGenerator
+epochs = 21  
+
 train_datagen = datagen.flow(X_train, y_train, batch_size=batch_size)
 
 # Train the model with increased data augmentation
@@ -140,12 +145,11 @@ history = model.fit(
     validation_data=(X_test, y_test)
 )
 
+'''                     Our Model is completed                                    '''
+
 
 import matplotlib.pyplot as plt
 
-
-
-# Plot accuracy and loss graphs
 plt.figure(figsize=(12, 4))
 
 # Plot Training & Validation Accuracy
@@ -174,6 +178,8 @@ print(f"Test Loss: {test_loss:.4f}")
 
 
 
+# Now we are suing two DIFFUSION datsets model for validation that whether our model generalises to various unseen model as well.
+# And we got satisfying reults
 
 directory_path_validate = "diffusion_datasets/ldm_100/1_fake"
 directory_path_validate_2 = "diffusion_datasets/ldm_200"
