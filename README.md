@@ -33,7 +33,7 @@ However our model nearly give chance probabilty (50 percent ) while testing for 
 ***This can be increased by taking more variety of images and of different GAN and diffusion family***
 **CONCLUSION** - CNN based binary classification on real vs fake image classification works well if trained and performed on GAN images , as it is easier for CNN to learn low level cues then to learn the ways in which an image can be classified as real .
 
-** CNN based Classification can not be generalised for unknown GAN family and Diffusion Based deepfake Model  **
+***CNN based Classification can not be generalised for unknown GAN family and Diffusion Based deepfake Model***
 
 # Level ->2 GANS vs DM Image Binary Classification
 
