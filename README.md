@@ -7,11 +7,11 @@ This project leverages the power of simple Machine Learning to build a **binary 
 
 ## Project Highlights:
 
-   1. ***Model***:   Using a pre-trained ResNet architecture and adding custom layers for image classification task. We took GAN images and passed it over resnet pre trained model with some more layer layered on top of it , and then we tested our model on different **DIFFUSION MODEL** as well.
-   1. ***Data Augmentation***:   Enhances training data diversity by applying random rotations ,  
+1. ***Model***:   Using a pre-trained ResNet architecture and adding custom layers for image classification task. We took GAN images and passed it over resnet pre trained model with some more layer layered on top of it , and then we tested our model on different **DIFFUSION MODEL** as well.
+1. ***Data Augmentation***:   Enhances training data diversity by applying random rotations ,  
      horizontal rotations that improves generalizability.
-   1. ***Performance***:   Delivers good accuracy , providing a reliable tool for image verification.
-   1. ***Testing on DM***:  Testing on different diffusion models .
+1. ***Performance***:   Delivers good accuracy , providing a reliable tool for image verification.
+1. ***Testing on DM***:  Testing on different diffusion models .
 
 
    
